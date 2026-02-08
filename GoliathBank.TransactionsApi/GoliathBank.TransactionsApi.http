@@ -1,6 +1,24 @@
-@GoliathBank.TransactionsApi_HostAddress = http://localhost:5244
+@host = http://localhost:5244
 
-//GET {{GoliathBank.TransactionsApi_HostAddress}}/weatherforecast/
-//Accept: application/json
+### Get all rates
+GET {{host}}/rates
+Accept: application/json
 
 ###
+
+### Get all transactions
+GET {{host}}/transactions
+Accept: application/json
+
+###
+
+### Get SKU detail (normal case)
+GET {{host}}/skus/T20061
+Accept: application/json
+
+###
+
+### Get SKU detail (no conversion path example - should return 422)
+GET {{host}}/skus/Z99999
+Accept: application/json
+
