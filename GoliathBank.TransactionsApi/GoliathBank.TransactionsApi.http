@@ -1,0 +1,6 @@
+@GoliathBank.TransactionsApi_HostAddress = http://localhost:5244
+
+//GET {{GoliathBank.TransactionsApi_HostAddress}}/weatherforecast/
+//Accept: application/json
+
+###
